@@ -286,8 +286,7 @@ overheat_backoff = true  # 过热时上限压到 20
 本插件面向**手机与电脑在同一局域网**的个人使用场景。配对信息只会给出本机物理网卡的
 局域网地址，文档和配置项也都按这个前提写。
 
-超出这个范围的用法不在支持范围内：不提供配置项，也不负责调试。源码是 MIT 的，
-需要的话自己改。
+超出这个范围的用法不在支持范围内：不提供配置项，也不负责调试。
 
 Windows 上手机连不上，先放行端口：
 
@@ -299,7 +298,6 @@ netsh advfirewall firewall add rule name="coyote-relay" dir=in action=allow prot
 
 ## 与 MaiBot 框架的契约
 
-下面每一条都是对着 MaiBot 1.4.0 的源码核过的（`src/plugin_runtime/...`），不是照文档猜的：
 
 | 契约 | Host 侧实现 | 本插件 |
 |---|---|---|
@@ -411,13 +409,8 @@ cd <MaiBot>
 
 ## 许可
 
-[MIT](LICENSE)。商用、二次开发、再分发都可以，出事别找我。
+[MIT](LICENSE)
 
 ---
 
-## 维护者备忘
 
-- 仓库：<https://github.com/Chenhui-2/maibot-coyote>
-- 发布新版本时同步改 `_manifest.json` 的 `version`，插件管理界面按它判断更新。
-- `waveforms/official.json` 是官方波形转写，改动前先确认来源可追溯。
-- 插件只面向局域网使用，文档和配置都按这个前提写，别加跨网络的选项。
