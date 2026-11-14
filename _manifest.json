@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+  "id": "coyote.maibot-coyote",
+  "version": "1.0.0",
+  "name": "郊狼控制",
+  "description": "DG-LAB 郊狼（Socket V4）控制插件：内置中继，手机 App 扫码接入，为模型提供带安全层的强度与波形工具。仅供成年人在自愿、知情、同意前提下使用；请在确保无初始强度的情况下启动本插件。",
+  "author": {
+    "name": "Chenhui-2",
+    "url": "https://github.com/Chenhui-2"
+  },
+  "license": "MIT",
+  "urls": {
+    "repository": "https://github.com/Chenhui-2/maibot-coyote"
+  },
+  "host_application": {
+    "min_version": "1.0.0",
+    "max_version": "1.99.99"
+  },
+  "sdk": {
+    "min_version": "2.0.0",
+    "max_version": "2.99.99"
+  },
+  "dependencies": [
+    {
+      "type": "python_package",
+      "name": "websockets",
+      "version_spec": ">=12.0"
+    },
+    {
+      "type": "python_package",
+      "name": "qrcode",
+      "version_spec": ">=7.4"
+    }
+  ],
+  "capabilities": [
+    "send.text",
+    "send.image"
+  ],
+  "i18n": {
+    "default_locale": "zh-CN",
+    "supported_locales": [
+      "zh-CN"
+    ]
+  }
+}
